@@ -83,6 +83,7 @@
             android:layout_height="wrap_content"/>
 
         <TextView
+            android:id="@+id/seeall"
             android:layout_width="wrap_content"
             android:text="See all"
             android:gravity="end"

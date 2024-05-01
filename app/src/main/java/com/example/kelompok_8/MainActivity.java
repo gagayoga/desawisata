@@ -80,9 +80,11 @@ public class MainActivity extends AppCompatActivity {
         productItemList.add(new Product("Rosin Hotel Resort", "Desa wisata merupakan sebuah " +
                 "konsep pariwisata yang menekankan pada pengembangan " +
                 "dan pemberdayaan potensi wisata di desa-desa.", "Rp. 500.000", R.drawable.item1));
+
         productItemList.add(new Product("Homestay Kawasan Deswita Karang Asem", "Desa wisata merupakan sebuah " +
                 "konsep pariwisata yang menekankan pada pengembangan " +
                 "dan pemberdayaan potensi wisata di desa-desa.", "Rp. 300.000", R.drawable.item2));
+
         productItemList.add(new Product("Almiya Homestay", "Desa wisata merupakan sebuah " +
                 "konsep pariwisata yang menekankan pada pengembangan " +
                 "dan pemberdayaan potensi wisata di desa-desa. Desa wisata merupakan sebuah Desa wisata merupakan sebuah Desa wisata merupakan sebuah", "Rp. 100.000", R.drawable.item3));
@@ -105,6 +107,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 new LogoutTask(MainActivity.this).execute();
+            }
+        });
+
+        TextView seeallButton = findViewById(R.id.seeall);
+        seeallButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, DetailImageWisata.class);
+                startActivity(intent);
             }
         });
     }
