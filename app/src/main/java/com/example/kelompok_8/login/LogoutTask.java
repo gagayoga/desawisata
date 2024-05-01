@@ -18,7 +18,7 @@ public class LogoutTask extends AsyncTask<Void, Void, Boolean> {
 
     private static final String TAG = "LogoutTask";
 
-    private static final String API_URL = "http://192.168.43.21:8000/api/users/logout";
+    private static final String API_URL = "http://192.168.149.89:8000/api/users/logout";
     private String AUTH_TOKEN;
 
     private final Context context;

@@ -25,9 +25,7 @@ public class ApiClient {
 
         Retrofit retrofit = new Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
-                //.baseUrl("https://apistemdu.000webhostapp.com/api/")
-                .baseUrl("http://192.168.43.21:8000/api/users/")
-                //.baseUrl("http://192.168.4.105:8080/api/")
+                .baseUrl("http://192.168.149.89:8000/api/users/")
                 .client(okHttpClient)
                 .build();
 
