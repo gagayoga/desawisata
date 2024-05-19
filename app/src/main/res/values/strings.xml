@@ -8,8 +8,8 @@
     <string name="hint_password">Password</string>
     <string name="lupa_password">Lupa password?</string>
     <string name="label_button">Sign In</string>
-    <string name="belum_punya">Belum Punya Akun?</string>
-    <string name="daftar_sekarang">Daftar Sekarang!</string>
+    <string name="belum_punya">Belum punya akun?</string>
+    <string name="daftar_sekarang">Daftar sekarang!</string>
     <!--  Text Login Page  -->
 
     <!--  Text Register Page  -->

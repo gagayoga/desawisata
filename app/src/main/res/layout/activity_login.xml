@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/white"
-    tools:context=".Login">
+    tools:context=".lib.view.Login">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,7 +30,7 @@
             android:textSize="24sp"
             android:textColor="@color/black"
             android:textStyle="bold"
-            android:layout_marginTop="10dp"/>
+            android:layout_marginTop="15dp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -69,7 +69,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/loginEmail"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 android:fontFamily="@font/poppins_medium"
                 android:inputType="textEmailAddress"
                 android:textColor="@color/black"
@@ -102,21 +102,23 @@
                 android:fontFamily="@font/poppins_medium"
                 android:inputType="textEmailAddress"
                 android:textColor="@color/black"
-                android:textSize="14sp"
+                android:textSize="16sp"
                 tools:ignore="TextContrastCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <TextView
+            android:id="@+id/btnLupaPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:layout_marginTop="15dp"
-            android:fontFamily="@font/poppins_medium"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="@font/poppins_semibold"
             android:text="Lupa Password"
             android:textColor="@color/black"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
     </LinearLayout>
 
@@ -126,13 +128,13 @@
         android:layout_marginHorizontal="50dp"
         android:layout_height="50dp"
         android:text="@string/label_button"
-        android:fontFamily="@font/poppins_bold"
+        android:fontFamily="@font/poppins_semibold"
         android:backgroundTint="@color/bg_warna"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
         android:background="@drawable/shape_warna"
         android:textColor="@color/white"
-        android:textSize="18sp"/>
+        android:textSize="16sp"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -147,8 +149,8 @@
             android:text="@string/belum_punya"
             android:fontFamily="@font/poppins_medium"
             android:layout_gravity="center"
-           android:textColor="@color/black"
-            android:textSize="16sp"
+           android:textColor="@color/text_grey"
+            android:textSize="14sp"
             />
         <TextView
             android:id="@+id/signupRedirectText"
@@ -158,8 +160,8 @@
             android:fontFamily="@font/poppins_medium"
             android:textColor="@color/bg_warna"
             android:textStyle="bold"
-            android:layout_marginLeft="5dp"
-            android:textSize="16sp"/>
+            android:layout_marginLeft="6dp"
+            android:textSize="14sp"/>
 
     </LinearLayout>
 </LinearLayout>

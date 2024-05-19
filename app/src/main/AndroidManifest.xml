@@ -3,10 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:allowBackup="true"
@@ -20,48 +18,38 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".DetailImageWisata"
+            android:name=".lib.view.MoreWisata"
             android:exported="false" />
         <activity
-            android:name=".DetailImage"
+            android:name=".lib.view.MapsWebView"
             android:exported="false" />
-        <!--
-             TODO: Before you run your application, you need a Google Maps API key.
-
-             To get one, follow the directions here:
-
-                https://developers.google.com/maps/documentation/android-sdk/get-api-key
-
-             Once you have your API key (it starts with "AIza"), define a new property in your
-             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
-             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
-        -->
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBFM30yErL__ARd8pdtIHC-ZAYVwjA4ypA" />
-
+        <activity
+            android:name=".lib.view.LupaPassword"
+            android:exported="false" />
+        <activity
+            android:name=".lib.view.DetailImageWisata"
+            android:exported="false" />
+        <activity
+            android:name=".lib.view.DetailImage"
+            android:exported="false" />
         <activity
             android:name=".Maps"
             android:exported="false"
-            android:label="@string/title_activity_maps" />
-        <activity
-            android:name=".maps.MapsWisata"
-            android:exported="false"
             android:label="@string/title_activity_maps_wisata" />
         <activity
-            android:name=".DetailProduct"
+            android:name=".lib.view.DetailProduct"
             android:exported="false" />
         <activity
-            android:name=".Register"
+            android:name=".lib.view.Register"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".lib.view.Login"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".lib.view.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".Splash_Screen"
+            android:name=".lib.view.Splash_Screen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
