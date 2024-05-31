@@ -10,7 +10,8 @@
         android:id="@+id/navbar"
         android:layout_alignParentTop="true"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:layout_height="55dp"
         android:background="@color/bg_warna">
 
         <ImageView

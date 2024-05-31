@@ -23,6 +23,8 @@ public class MapsWebView extends AppCompatActivity {
 
     private TextView textNavbar;
 
+    private String urlMaps = "https://www.google.com/maps/place/Muntuk,+Kec.+Dlingo,+Kabupaten+Bantul,+Daerah+Istimewa+Yogyakarta/@-7.9185809,110.3713961,13z/data=!3m1!4b1!4m6!3m5!1s0x2e7a5375c359c933:0x5027a76e3568c00!8m2!3d-7.910537!4d110.4440838!16s%2Fg%2F1235kpl3?hl=id&entry=ttu";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,11 +74,11 @@ public class MapsWebView extends AppCompatActivity {
     private String getMapUrlForProduct(String productJudul) {
         switch (productJudul) {
             case "Rosin Hotel Resort":
-                return "https://www.google.com/maps/place/7%C2%B055'08.8%22S+110%C2%B026'37.3%22E/@-7.9191157,110.4429389,18z/data=!3m1!4b1!4m4!3m3!8m2!3d-7.9191173!4d110.4436914?entry=ttu";
+               return urlMaps;
             case "Homestay Kawasan Deswita Karang Asem":
-                return "https://www.google.com/maps/place/7%C2%B055'08.8%22S+110%C2%B026'37.3%22E/@-7.9197444,110.4396044,18.63z/data=!4m4!3m3!8m2!3d-7.9191111!4d110.4436944?entry=ttu";
+                return urlMaps;
             case "Almiya Homestay":
-                return "https://www.google.com/maps/place/7%C2%B055'08.8%22S+110%C2%B026'37.3%22E/@-7.9197444,110.4396044,18.63z/data=!4m4!3m3!8m2!3d-7.9191111!4d110.4436944?entry=ttu";
+                return urlMaps;
             case "Wisata Menganyam Bambu":
                 return "https://www.google.com/maps/place/KARYA+MANDIRI+%22Bamboo+Handicraft%22/@-7.9193339,110.4425319,18.78z/data=!4m6!3m5!1s0x2e7a5376999426fb:0x7f8edbbad1f789dd!8m2!3d-7.919143!4d110.4433627!16s%2Fg%2F11bxgn32m0?entry=ttu";
             default:

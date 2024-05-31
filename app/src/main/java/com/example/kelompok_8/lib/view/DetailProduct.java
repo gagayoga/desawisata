@@ -3,8 +3,12 @@ package com.example.kelompok_8.lib.view;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +23,20 @@ public class DetailProduct extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_product);
+
+        FrameLayout topPanel = findViewById(R.id.topPanel);
+        ScrollView kontenWisata = findViewById(R.id.kontenWisata);
+        ProgressBar loadingMain = findViewById(R.id.loadingMain);
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                // Hide loadingMain and show kontenMain
+                loadingMain.setVisibility(View.GONE);
+                topPanel.setVisibility(View.VISIBLE);
+                kontenWisata.setVisibility(View.VISIBLE);
+            }
+        }, 1500);
 
         // Ambil data produk dari intent
         Intent intent = getIntent();

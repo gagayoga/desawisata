@@ -115,8 +115,6 @@ public class LupaPassword extends AppCompatActivity {
                     builder.setPositiveButton("OK", (dialog, which) -> {
                         // Arahkan ke halaman login atau lakukan tindakan lain jika perlu
                         Toast.makeText(LupaPassword.this, "Silakan login kembali dengan password baru anda", Toast.LENGTH_SHORT).show();
-                        Intent intentLogin = new Intent(getApplicationContext(), Login.class);
-                        startActivity(intentLogin);
                         finish();
                     });
 
